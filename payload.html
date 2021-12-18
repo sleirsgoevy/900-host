@@ -25,33 +25,32 @@ function getHashParams()
 
 function done()
 {
+    history.pushState({}, '', '.');
     if(main_ret == 0 || main_ret == 179)
     {
         alert("You're all set!");
-        read_ptr_at(0);
+        setTimeout(function() { read_ptr_at(0); }, 1);
     }
     else
         alert("Jailbreak failed! Reboot your PS4 and try again.");
 }
 
-function pushScript(what)
+function runScript(what)
 {
-    var scr = document.createElement('script');
-    scr.src = what;
-    document.body.appendChild(scr);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', what, false);
+    xhr.send('');
+    eval.call(window, xhr.responseText);
 }
 
 var params = getHashParams();
 
 if('p0' in params)
-    pushScript(params.p0);
+    runScript(params.p0);
 if('p1' in params)
-    pushScript(params.p1);
+    runScript(params.p1);
 </script>
 <script src="webkit-9.00/exploit.js"></script>
-<script>
-history.pushState({}, '', '.');
-</script>
 <script src="webkit-9.00/malloc.js"></script>
 <script src="webkit-9.00/rop/rop.js"></script>
 <script src="common/syscalls.js"></script>

