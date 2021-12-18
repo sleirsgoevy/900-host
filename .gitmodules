@@ -1,0 +1,6 @@
+[submodule "kexploit"]
+	path = kexploit
+	url = https://github.com/ChendoChap/pOOBs4
+[submodule "webkit-9.00"]
+	path = webkit-9.00
+	url = https://github.com/sleirsgoevy/bad_hoist
