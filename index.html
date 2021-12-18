@@ -54,7 +54,8 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
             <li>Click on the link that says JB+MIRA<s> or JB+HEN</s>, depending on your personal habits. In about a minute you'll
                 be prompted to insert the USB drive you prepared. Insert the USB drive, wait for the notification about
                 the invalid format to pop up, then eject the drive and click OK. <b>Important: never leave the drive inserted during a reboot!</b></li>
-            <li>You will get an alert saying "You're all set!", followed by "There is not enough free system memory". This means that
+            <li>You will get a message saying "There is not enough free system memory". This is normal, just click OK.</li>
+            <li>After 20 more seconds you will get an alert saying "You're all set!", followed by "There is not enough free system memory". This means that
                 everything has gone well. Note: if using Mira, the screen will go dark for a dozen of seconds.<br />
                 If something went wrong during the process, you may get an alert with an error. In this case you must reboot
                 your PS4, preferrably without closing the dialog box.<br />
@@ -65,6 +66,8 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
             </li>
             <li>If you get a "There is not enough free system memory" message without any pop-ups, then it means that the webkit
                 exploit has failed. Click OK and retry. <b>This error is not going to harm your console.</b></li>
+            <li>Payload-only links are also provided. You can use a payload-only link if you have already run a
+                jailbreak.</li>
             <li><b>For advanced users:</b> To load your own payloads using NetCat, run JB+NETCAT and send the
                 payload to TCP port 9021 (9020 for the legacy version).</li>
         </ol>
@@ -88,7 +91,8 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
                 появится всплывающее окно &laquo;Insert USB now. do not close the dialog until notification pops, remove usb after closing it.&raquo;.
                 Не закрывая его, вставьте флешку и дождитесь системного сообщения &laquo;Формат файловой системы не поддерживается&raquo;, после чего
                 вытащите флешку и нажмите OK. <b>Внимание: ни в коем случае не оставляйте флешку в приставке, втыкайте её только для активации!</b></li>
-            <li>Появится всплывающее окно &laquo;You're all set&raquo;, после чего вылетит ошибка нехватки памяти. При использовании Mira экран также
+            <li>Вылетит сообщение "Недостаточно свободной оперативной памяти". Это нормально, просто нажмите OK.</li>
+            <li>Примерно через 20 секунд появится всплывающее окно &laquo;You're all set&raquo;, после чего вылетит ошибка нехватки памяти. При использовании Mira экран также
                 может ненадолго погаснуть. Если все произошло именно так, взлом сработал.<br />
                 Если что-то пошло не так, может вылететь сообщение об ошибке. В этом случае необходимо, не закрывая окно, перезагрузить консоль.<br />
                 Если взлом занимает больше минуты, и у вас адекватное интернет-соединение, скорее всего он повис.
@@ -99,6 +103,7 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
             <li>Если вместо успешного взлома появляется ошибка нехватки памяти без каких-либо еще сообщений, это означает,
                 что эксплойт WebKit не сработал. <b>Эта ошибка вылезает в 90% случаях и НЕ ВРЕДИТ СИСТЕМЕ, просто повторите попытку.</b>
             </li>
+            <li>Также доступны ссылки, содержащие только пейлоады. Используйте их, если jailbreak уже активирован.</li>
             <li><b>Для продвинутых пользователей:</b> чтобы отправить пейлоад по сети (NetCat), выберите JB+NETCAT,
                 и отправьте пейлоад на TCP-порт 9021 (9020 для Legacy-версии).</li>
         </ol>
@@ -108,16 +113,30 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
     </div>
     <div id="progress"></div>
 
-<a href="payload.html#p0=mira/mira.js&p1=mira/mira2.js">JB+MIRA</a>
+<p>
+<a href="jb.html#p0=mira/mira.js&p1=mira/mira2.js">JB+MIRA</a>
 <!-- not yet -->
-<!--<a href="payload.html#p0=mira/mira.js&p1=ps4-hen-vtx.js">JB+HEN</a>-->
-<!--<a href="payload.html#p0=mira/mira.js&p1=linux/1gb.js">JB+LINUX (VRAM 1GB)</a>-->
-<!--<a href="payload.html#p0=mira/mira.js&p1=linux/3gb.js">JB+LINUX (VRAM 3GB)</a>-->
+<!--<a href="jb.html#p0=mira/mira.js&p1=ps4-hen-vtx.js">JB+HEN</a>-->
+<!--<a href="jb.html#p0=mira/mira.js&p1=linux/1gb.js">JB+LINUX (VRAM 1GB)</a>-->
+<!--<a href="jb.html#p0=mira/mira.js&p1=linux/3gb.js">JB+LINUX (VRAM 3GB)</a>-->
 <!-- /not yet -->
-<a href="payload.html#p0=mira/mira.js&p1=ftp.js">JB+FTP</a>
-<a href="payload.html#p0=mira/mira.js&p1=fakeusb.js">JB+FAKEUSB</a>
-<a href="payload.html">JB+NETCAT (LEGACY)</a>
-<a href="payload.html#p0=mira/mira.js">JB+NETCAT</a>
+<a href="jb.html#p0=mira/mira.js&p1=ftp.js">JB+FTP</a>
+<a href="jb.html#p0=mira/mira.js&p1=fakeusb.js">JB+FAKEUSB</a>
+<a href="jb.html">JB+NETCAT (LEGACY)</a>
+<a href="jb.html#p0=mira/mira.js">JB+NETCAT</a>
+</p>
+<p>
+<a href="payload.html#p0=mira/mira.js&p1=mira/mira2.js">MIRA</a>
+<!-- not yet -->
+<!--<a href="payload.html#p0=mira/mira.js&p1=ps4-hen-vtx.js">HEN</a>-->
+<!--<a href="payload.html#p0=mira/mira.js&p1=linux/1gb.js">LINUX (VRAM 1GB)</a>-->
+<!--<a href="payload.html#p0=mira/mira.js&p1=linux/3gb.js">LINUX (VRAM 3GB)</a>-->
+<!-- /not yet -->
+<a href="payload.html#p0=mira/mira.js&p1=ftp.js">FTP</a>
+<a href="payload.html#p0=mira/mira.js&p1=fakeusb.js">FAKEUSB</a>
+<a href="payload.html">NETCAT (LEGACY)</a>
+<a href="payload.html#p0=mira/mira.js">NETCAT</a>
+</p>
 </body>
 
 </html>

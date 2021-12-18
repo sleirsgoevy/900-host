@@ -32,7 +32,7 @@ function done()
         setTimeout(function() { read_ptr_at(0); }, 1);
     }
     else
-        alert("Jailbreak failed! Reboot your PS4 and try again.");
+        alert("Jailbreak is not activated.");
 }
 
 function runScript(what)
@@ -57,10 +57,6 @@ if('p1' in params)
 <script src="webkit-9.00/rop/rop.js"></script>
 <script src="common/syscalls.js"></script>
 <script src="common/syscalls2.js"></script>
-<script src="kexploit/int64.js"></script>
-<script src="kexploit/rop.js"></script>
-<script src="kexploit/kexploit.js"></script>
-<script src="kexploit-launcher.js"></script>
 <script src="netcat.js"></script>
 <script>done();</script>
 </body>
