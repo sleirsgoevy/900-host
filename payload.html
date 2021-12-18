@@ -44,14 +44,16 @@ function runScript(what)
 }
 
 var params = getHashParams();
-
+</script>
+<script src="webkit-9.00/exploit.js"></script>
+<script src="webkit-9.00/malloc.js"></script>
+<script>
+//load blobs here
 if('p0' in params)
     runScript(params.p0);
 if('p1' in params)
     runScript(params.p1);
 </script>
-<script src="webkit-9.00/exploit.js"></script>
-<script src="webkit-9.00/malloc.js"></script>
 <script src="webkit-9.00/rop/rop.js"></script>
 <script src="common/syscalls.js"></script>
 <script src="common/syscalls2.js"></script>
