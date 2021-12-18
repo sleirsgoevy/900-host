@@ -1,5 +1,5 @@
 <html>
-<body onload="go()">
+<body>
 <script>
 function wk_keep_alive()
 {
@@ -28,7 +28,7 @@ function done()
     if(main_ret == 0 || main_ret == 179)
     {
         alert("You're all set!");
-        //read_ptr_at(0);
+        read_ptr_at(0);
     }
     else
         alert("Jailbreak failed! Reboot your PS4 and try again.");
@@ -49,6 +49,9 @@ if('p1' in params)
     pushScript(params.p1);
 </script>
 <script src="webkit-9.00/exploit.js"></script>
+<script>
+history.pushState({}, '', '.');
+</script>
 <script src="webkit-9.00/malloc.js"></script>
 <script src="webkit-9.00/rop/rop.js"></script>
 <script src="common/syscalls.js"></script>
@@ -59,7 +62,5 @@ if('p1' in params)
 <script src="kexploit-launcher.js"></script>
 <script src="netcat.js"></script>
 <script>done();</script>
-<input/>
-<button onclick="alert('test html5 after exploit')">click me</button>
 </body>
 </html>
