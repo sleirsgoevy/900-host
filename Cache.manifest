@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# random: 4a238944201217f982082eaafa869572
+# random: b32bb4901d3d90c3bad83e4848c529f6
 
 CACHE:
 Cache.manifest
@@ -9,6 +9,7 @@ common/syscalls2.js
 ftp.js
 fakeusb.js
 index.html
+jb.html
 kexploit/int64.js
 kexploit/kexploit.js
 kexploit/rop.js
