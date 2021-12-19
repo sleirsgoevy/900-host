@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# random: 4a238944201217f982082eaafa869572
+
+CACHE:
+Cache.manifest
+common/relocator.js
+common/syscalls.js
+common/syscalls2.js
+ftp.js
+fakeusb.js
+index.html
+kexploit/int64.js
+kexploit/kexploit.js
+kexploit/rop.js
+kexploit-launcher.js
+mira/mira.js
+mira/mira2.js
+netcat.js
+payload.html
+webkit-9.00/exploit.js
+webkit-9.00/malloc.js
+webkit-9.00/rop/rop.js
+
+NETWORK:
+*
