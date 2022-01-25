@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# random: d42a820bab818dacd6cd97482532888b
+# random: 995ffa10a9923751fc07b9f431115ff4
 
 CACHE:
 Cache.manifest
@@ -14,6 +14,8 @@ kexploit/int64.js
 kexploit/kexploit.js
 kexploit/rop.js
 kexploit-launcher.js
+linux/1gb.js
+linux/3gb.js
 mira/mira.js
 mira/mira2.js
 netcat.js
