@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# random: ec236f280209765614e17c8581f82987
+# random: a52cbc88874f9e0675865e7738c5e966
 
 CACHE:
 Cache.manifest
@@ -18,6 +18,7 @@ linux/1gb.js
 linux/3gb.js
 mira/mira.js
 mira/mira2.js
+mira/jbcldr.js
 netcat.js
 payload.html
 webkit-9.00/exploit.js
